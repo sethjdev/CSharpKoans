@@ -44,7 +44,7 @@ namespace CSharpKoans
         [Koan]
         public void FillInValues()
         {
-            Assert.AreEqual(1 + 1, __);
+            Assert.AreEqual(1 + 1, 2);
         }
 
         const string __ = "2";

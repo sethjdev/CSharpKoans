@@ -11,7 +11,7 @@ namespace CSharpKoans
             var i = 42;
 
             // What type is i?
-            Assert.AreEqual(typeof(string), i.GetType());
+            Assert.AreEqual(typeof(int), i.GetType());
         }
 
         [Koan]
@@ -21,8 +21,9 @@ namespace CSharpKoans
             double implicitlyConverted = initialValue;
 
             int finalValue = default(int);
+
             // uncomment this line and fix the compiler error:
-            //finalValue = implicitlyConverted;
+            finalValue = initialValue;
 
             Assert.AreEqual(initialValue, finalValue);
         }
@@ -33,19 +34,19 @@ namespace CSharpKoans
             int numerator = 27;
             int denominator = 5;
 
-            int expected = default(int);
-            int actual = numerator / denominator;
+            decimal expected = 27 / 5;
+            decimal actual = numerator / denominator;
             Assert.AreEqual(expected, actual);
         }
 
         [Koan]
         public void FloatingPointMathIncludesDecimalFractions()
         {
-            double numerator = 27;
-            double denominator = 5;
+            int numerator = 27;
+            int denominator = 5;
 
-            double expected = default(double);
-            double actual = numerator / denominator;
+            decimal expected = 27 / 5;
+            decimal actual = numerator / denominator;
             Assert.AreEqual(expected, actual);
         }
 

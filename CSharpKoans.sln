@@ -1,11 +1,18 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpKoans", "CSharpKoans\CSharpKoans.csproj", "{FE6BC895-60BD-4AFC-A67C-B18D461F2C16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpKoans.Core", "CSharpKoans.Core\CSharpKoans.Core.csproj", "{54CA27F7-0AC5-4692-89A5-2FBDF7E15C8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpKoans.Test", "CSharpKoans.Test\CSharpKoans.Test.csproj", "{2E81F95A-A818-407E-9FF8-08EA3FC846BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{26850B95-25B2-4154-8520-DF43E59E94C0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
