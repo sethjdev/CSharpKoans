@@ -1,5 +1,6 @@
 using CSharpKoans.Core;
 using NUnit.Framework;
+using System;
 
 namespace CSharpKoans
 {
@@ -62,8 +63,9 @@ namespace CSharpKoans
             // rounding error
             for (int i = 0; i < 1000000; i++)
             {
-                values[i] = total;
                 total += increment;
+                values[i] = Math.Round(total);
+                
             }
 
             Assert.AreEqual(1000.0, values[999999]);
