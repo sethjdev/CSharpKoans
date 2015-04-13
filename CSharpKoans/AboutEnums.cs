@@ -19,9 +19,9 @@ namespace CSharpKoans
         {
             var dir = new Direction();
 
-            Assert.AreEqual(-1, dir);
+            Assert.AreEqual(Direction.Up, dir);
 
-            Assert.AreEqual(-1, Direction.Left);
+            Assert.AreEqual(2, (int)Direction.Left);
         }
 
         public enum DaysOfTheWeek

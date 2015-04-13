@@ -1,6 +1,5 @@
 using CSharpKoans.Core;
 using NUnit.Framework;
-using System;
 
 namespace CSharpKoans
 {
@@ -62,10 +61,9 @@ namespace CSharpKoans
             // rewrite this loop to minimize the accumulating
             // rounding error
             for (int i = 0; i < 1000000; i++)
-            {
-                total += increment;
-                values[i] = Math.Round(total);
-                
+            {   
+                total = increment * (i+1);
+                values[i] = total;
             }
 
             Assert.AreEqual(1000.0, values[999999]);
@@ -81,10 +79,10 @@ namespace CSharpKoans
 
             j -= 200;
 
-            Assert.AreEqual(default(int), i);
+            Assert.AreEqual(-75, i);
             // You may need to look at the value of j in the debugger to
             // fix this one:
-            Assert.AreEqual(default(uint), j);
+            Assert.AreEqual(4294967146, j);
         }
 
         [Koan]
@@ -96,7 +94,7 @@ namespace CSharpKoans
             var k = i + j;
 
             // What type is k?
-            Assert.AreEqual(typeof(int), k.GetType());
+            Assert.AreEqual(typeof(long), k.GetType());
 
         }
     }
